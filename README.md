@@ -1,4 +1,5 @@
 # transform an html file into ODT
+⚠️ this is the worst possible way to do this ⚠️
 
 hack-of-the-day, we pass the html file to a libreoffice instance runing in docker.
 to do this we upload to the file we get via HTML5 file upload to '/odt/${sha256_sum_of_the_file}/data' and process it in docker. the result we get back to the user.
@@ -6,6 +7,11 @@ to do this we upload to the file we get via HTML5 file upload to '/odt/${sha256_
 0 UX
 
 we also keep the files arround for caching purposes.
+
+# how it should be done
+it's really not that hard to parse the html, go through the node and use something like [DOCX](https://www.npmjs.com/package/docx) to do it all client side.
+
+I really just wanted to pilot docker from node.
 
 # based on sapper-template
 
