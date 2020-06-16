@@ -1,3 +1,12 @@
+# transform an html file into ODT
+
+hack-of-the-day, we pass the html file to a libreoffice instance runing in docker.
+to do this we upload to the file we get via HTML5 file upload to '/odt/${sha256_sum_of_the_file}/data' and process it in docker. the result we get back to the user.
+
+0 UX
+
+we also keep the files arround for caching purposes.
+
 # sapper-template
 
 The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
