@@ -7,7 +7,7 @@ to do this we upload to the file we get via HTML5 file upload to '/odt/${sha256_
 
 we also keep the files arround for caching purposes.
 
-# sapper-template
+# based on sapper-template
 
 The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
 
